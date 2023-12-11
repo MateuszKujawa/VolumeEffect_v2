@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./customStyles.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Effect - Monika Kujawa | Salon fryzjerski</title>
+
+    <!-- meta tags -->
+    <meta name="description" content="Salon fryzjerski w Słupcy - Volume Effect, Monika Kujawa">
+    <meta name="author" content="frontend.mkujawa">
+    <meta name="keywords" content="salon fryzjerski słupca, fryzjer słupca, fryzjer, salon monika kujawa, fryzjer monika kujawa, monika kujawa fryzjer, volume effect, wolume efekt, volume efect, volume effect fryzjer, volume effect słupca, fryzjer warszawska, fryzury, fryzury słupca">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+
+    <!-- Awesome Icons -->
+    <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
+
+    <!-- FONT'S -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&di">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2QDHJ8PWF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-M2QDHJ8PWF');
+    </script>
+    
+</head>
+<body>
+    
+    <header class="lg:px-16 px-4 bg-[#0f0f0f] flex flex-wrap items-center py-4 shadow-md fixed w-full">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="">
+                <img src="./images/logo.png" alt="Volume Effect logo" class="w-[120px]">
+            </a>
+        </div>
+
+        <!-- Mobile menu icon -->
+        <div class="relative mx-auto md:hidden scale-125">
+            <nav x-data="{ open: false }">
+                <button class="text-gray-300 hover:text-white duration-100 w-14 h-14 relative focus:outline-none" @click="open = !open" id="mobile-icon">
+                    <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-y-1/2">
+                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                    </div>
+                </button>
+            </nav>
+        </div>
+
+        <div class="md:flex md:items-center md:w-auto">
+            <nav>
+                <ul class="hidden md:flex space-x-6 text-gray-400 text-lg">
+                    <li class="hover:text-white duration-300"><a href="#">STRONA GŁÓWNA</a></li>
+                    <li class="hover:text-white duration-300"><a href="#">O NAS</a></li>
+                    <li class="hover:text-white duration-300"><a href="#">USŁUGI</a></li>
+                    <li class="hover:text-white duration-300"><a href="#">GALERIA</a></li>
+                    <li class="hover:text-white duration-300"><a href="#">CENNIK</a></li>
+                    <li class="hover:text-white duration-300"><a href="#">KONTAKT</a></li>
+                  </ul>
+            </nav>
+        </div>
+
+
+          <!-- Mobile menu -->
+          <div class="md:hidden flex justify-center w-full">
+            <div id="mobile-menu" class="mobile-menu absolute top-23 w-full">
+                <ul class="bg-[#0f0f0f] text-gray-400 text-xl shadow-lg leading-9 h-screen pt-24">
+                    <li class="py-2 px-2"><a href="#" class="block px-2 py-2 text-center w-full hover:bg-gray-200 hover:text-[#0f0f0f] duration-300">STRONA GŁÓWNA</a>
+                    </li>
+
+                    <li class="py-2 px-2"><a href="#" class="block px-2 py-2 text-center w-full hover:bg-gray-200 hover:text-[#0f0f0f] duration-300">O NAS</a>
+                    </li>
+
+                    <li class="py-2 px-2"><a href="#" class="block px-2 py-2 text-center w-full hover:bg-gray-200 hover:text-[#0f0f0f] duration-300">USŁUGI</a>
+                    </li>
+
+                    <li class="py-2 px-2"><a href="#" class="block px-2 py-2 text-center w-full hover:bg-gray-200 hover:text-[#0f0f0f] duration-300">GALERIA</a>
+                    </li>
+
+                    <li class="py-2 px-2"><a href="#" class="block px-2 py-2 text-center w-full hover:bg-gray-200 hover:text-[#0f0f0f] duration-300">CENNIK</a>
+                    </li>
+
+                    <li class="py-2 px-2"><a href="#" class="block px-2 py-2 text-center w-full hover:bg-gray-200 hover:text-[#0f0f0f] duration-300">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    
+        </nav>
+    </header>
+
+    <!-- Main baner page section -->
+    <section class="w-full h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center bg-cover">
+        <div class="w-full md:w-1/2 h-full flex items-center px-4">
+            <div class="px-6">
+                <h2 class="text-white font-semibold text-2xl">Piękno tkwi we włosach...</h2>
+                <h1 class="text-white font-bold text-6xl md:text-8xl">Volume Effect</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full h-screen bg-red-500"></section>
+    <!-- Script's -->
+        <script src="./js/toggle-menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <!-- Script's -->
+</body>
+</html>
