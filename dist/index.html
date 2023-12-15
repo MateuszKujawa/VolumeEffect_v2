@@ -39,7 +39,7 @@
     
 </head>
 <body>
-        <header class="fixed top-0 lg:px-16 px-4 bg-[#0f0f0f] flex flex-wrap items-center py-2 shadow-md w-full font-poppins z-50">
+        <header class="fixed top-0 lg:px-16 px-4 flex flex-wrap items-center py-2 w-full font-poppins z-50 bg-black/25 shadow-md">
             <div class="flex-1 flex justify-between items-center">
                 <a href="">
                     <img src="./images/logo.png" alt="Volume Effect logo" class="w-[120px]">
@@ -61,13 +61,13 @@
     
             <div class="md:flex md:items-center md:w-auto">
                 <nav>
-                    <ul class="hidden md:flex space-x-6 text-gray-400 text-lg">
-                        <li class="hover:text-white duration-300"><a href="#">STRONA GŁÓWNA</a></li>
-                        <li class="hover:text-white duration-300"><a href="#">O NAS</a></li>
-                        <li class="hover:text-white duration-300"><a href="#">USŁUGI</a></li>
-                        <li class="hover:text-white duration-300"><a href="#">GALERIA</a></li>
-                        <li class="hover:text-white duration-300"><a href="#">CENNIK</a></li>
-                        <li class="hover:text-white duration-300"><a href="#">KONTAKT</a></li>
+                    <ul class="hidden md:flex space-x-6 text-gray-300 text-lg">
+                        <li class="font-poppins font-thin hover:text-white duration-300"><a href="#">STRONA GŁÓWNA</a></li>
+                        <li class="font-poppins font-thin hover:text-white duration-300"><a href="#">O NAS</a></li>
+                        <li class="font-poppins font-thin hover:text-white duration-300"><a href="#">USŁUGI</a></li>
+                        <li class="font-poppins font-thin hover:text-white duration-300"><a href="#">GALERIA</a></li>
+                        <li class="font-poppins font-thin hover:text-white duration-300"><a href="#">CENNIK</a></li>
+                        <li class="font-poppins font-thin hover:text-white duration-300"><a href="#">KONTAKT</a></li>
                       </ul>
                 </nav>
             </div>
@@ -102,7 +102,7 @@
         </header>
     
         <!-- Main baner page section -->
-        <section class="z-10 bg-[black] bg-fixed" id="parallaxMouse">
+        <section class="z-30 bg-[url('./images/background/banner.jpg')] bg-fixed bg-center bg-cover bg-no-repeat w-full h-screen">
             <div class="w-full h-full flex items-center justify-center">
                 <div class="text-center">
                     <h1 class="text-white font-kaushan font-black text-7xl md:text-9xl px-4">Volume Effect</h1>
@@ -122,7 +122,38 @@
         </section>
     
     
-        <section class="w-full h-screen bg-red-500" id="two"></section>
+        <section class="w-full h-full bg-[url('./images/background/about-bg.jpg')] bg-fixed bg-center bg-cover bg-no-repeat" id="two">
+            <div class="sm:flex-col sm:justify-center sm:items-center md:flex">
+                <div class="w-full md:w-[700px] pt-10 md:ml-48 md:pt-56">
+                
+                    <div class="w-fit h-fit p-4 flex items-center justify-center">
+                        <div class="w-8 h-1 bg-yellow-500 mx-5"></div><h1 class="text-[#0f0f0f] font-raleway font-semibold text-2xl">O Nas</h1>
+                    </div>
+    
+                    <div class="px-8 py-4">
+                        <p class="text-lg">
+                            Salon fryzjerski Volume Effect, odnosi nieustanne sukcesy i cieszy się zasłużoną renomą. To miejsce, gdzie doskonałe fryzury stają się rzeczywistością, a zadowolenie klientów jest najwyższym priorytetem.<br><br>
+    
+                            Od samego początku swojej działalności, salon kładzie nacisk na profesjonalizm i dbałość o każdy detal. Właściciel i personel, którzy tworzą tę ekipę, nie tylko wykonują swoje obowiązki z pełnym zaangażowaniem, ale również sumienie dokładają do każdej usługi. Ich pasja do fryzjerstwa widać w każdym cięciu, koloryzacji i stylizacji, które tworzą.<br>
+                            We wnętrzu salonu Volume Effect panuje przyjemna i relaksująca atmosfera. Elegancki design, stonowane kolory i nowoczesne wyposażenie tworzą idealne otoczenie, w którym klienci mogą odprężyć się i oddać w ręce profesjonalistów. Wszystkie stanowiska fryzjerskie są wygodne i ergonomiczne, zapewniając komfort zarówno dla klientów, jak i fryzjerów.<br><br>
+    
+                            Co wyróżnia ten salon na tle innych, to nie tylko wysoka jakość usług, ale także serdeczna i miła obsługa. Personel salonu to zespół ludzi o szerokim uśmiechu i życzliwym podejściu. Nasze doświadczenie i wiedza pozwalają doradzić klientom i stworzyć fryzurę, która idealnie pasuje do ich stylu i osobowości.<br><br>
+    
+                            Jeśli szukasz miejsca, gdzie pasja do fryzjerstwa idzie w parze z miłą atmosferą i perfekcyjnym wykonaniem, to salon fryzjerski Volume Effect jest idealnym wyborem. Zapraszamy Cię do odwiedzenia naszego salonu i przekonania się osobiście, jak wiele możemy dla Ciebie zrobić.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="w-full md:w-[500px] h-full pt-10 lg:pt-56">
+                    <div class="flex justify-between">
+                        <img src="./images/inside_galery/3.webp" alt="" class="p-4">
+                        <img src="./images/inside_galery/1.webp" alt="" class="p-4">
+                    </div>
+                </div>
+            </div>
+           
+            
+        </section>
     
     <!-- Script's -->
 
