@@ -6,6 +6,8 @@ module.exports = {
       'raleway': ['Raleway', 'sans-serif'],
       'poppins': ['Poppins', 'sans-serif'],
       'kaushan': ['Kaushan Script', 'sans-serif'],
+      'courgette': ['Courgette', 'cursive'],
+      'Violaceous': ['Violaceous', sans],
     }
   },
   plugins: [],
